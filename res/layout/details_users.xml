@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:layout_below="@+id/imageViewDetailsUserIcon" 
+        android:layout_centerHorizontal="true" 
+        android:layout_marginTop="51dp" 
+        android:id="@+id/textViewDetailsName" 
+        android:text="Name">
+        
+    </TextView>
+    <TextView 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:layout_below="@+id/textViewDetailsName" 
+        android:layout_alignLeft="@+id/textViewDetailsName" 
+        android:layout_marginTop="28dp" 
+        android:id="@+id/textViewDetailsAddress" 
+        android:text="Address">
+        
+    </TextView>
+    <TextView 
+        android:layout_height="wrap_content" 
+        android:id="@+id/textViewDetailsPhone" 
+        android:layout_width="wrap_content" 
+        android:layout_below="@+id/textViewDetailsAddress" 
+        android:layout_alignLeft="@+id/textViewDetailsAddress" 
+        android:layout_marginTop="28dp" android:text="Phone">
+        
+    </TextView>
+    <Button 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:layout_alignParentTop="true" 
+        android:layout_alignParentLeft="true" 
+        android:id="@+id/buttonDetailsBack" 
+        android:text="Back">
+        
+    </Button>
+    <Button 
+        android:id="@+id/buttonEditDetails" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Edit Details" 
+        android:layout_below="@+id/textViewDetailsPhone" 
+        android:layout_centerHorizontal="true" 
+        android:layout_marginTop="44dp">
+        
+    </Button>
+    
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <Button 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true" 
+        android:layout_alignParentLeft="true" 
+        android:id="@+id/buttonEditBack" 
+        android:text="Back">
+        
+    </Button>
+    <TextView
+        android:layout_height="wrap_content" 
+        android:id="@+id/textViewEditAddress" 
+        android:layout_width="wrap_content" 
+        android:text="Address" 
+        android:layout_alignTop="@+id/editTextEditAddress" 
+        android:layout_alignLeft="@+id/textViewEditName" 
+        android:layout_marginTop="14dp">
+        
+    </TextView>
+    <Button 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:layout_below="@+id/editTextEditPhone" 
+        android:layout_centerHorizontal="true" 
+        android:layout_marginTop="38dp" 
+        android:id="@+id/buttonEdit" 
+        android:text="Update">
+        
+    </Button>
+    <TextView 
+        android:id="@+id/textViewEditName" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Name" 
+        android:layout_alignBottom="@+id/editTextEditName" 
+        android:layout_toRightOf="@+id/buttonEditBack" 
+        android:layout_marginBottom="14dp">
+        
+    </TextView>
+    <EditText 
+        android:layout_width="120dp" 
+        android:inputType="textPersonName" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/editTextEditName" 
+        android:layout_below="@+id/buttonEditBack" 
+        android:layout_alignLeft="@+id/buttonEdit">
+        <requestFocus></requestFocus>
+    </EditText>
+    <EditText 
+        android:layout_width="120dp" 
+        android:inputType="textPostalAddress" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/editTextEditAddress" 
+        android:layout_below="@+id/editTextEditName" 
+        android:layout_alignLeft="@+id/editTextEditName" 
+        android:layout_marginTop="14dp">
+        
+    </EditText>
+    <EditText 
+        android:layout_width="120dp" 
+        android:inputType="phone" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/editTextEditPhone" 
+        android:layout_below="@+id/editTextEditAddress" 
+        android:layout_alignLeft="@+id/editTextEditAddress" 
+        android:layout_marginTop="14dp">
+        
+    </EditText>
+    <TextView 
+        android:id="@+id/textViewEditPhone" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Phone No." 
+        android:layout_alignTop="@+id/editTextEditPhone" 
+        android:layout_toRightOf="@+id/buttonEditBack" 
+        android:layout_marginTop="15dp">
+        
+    </TextView>
+</RelativeLayout>
